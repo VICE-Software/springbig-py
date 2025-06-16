@@ -1,0 +1,2055 @@
+{
+  "database": "springbig",
+  "tables_count": 11,
+  "tables": [
+    {
+      "name": "merchant_segment_members",
+      "columns": [
+        {
+          "name": "merchant_segment_id",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "member_id",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": "distkey",
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "delete, insert, references, select, trigger, truncate, update",
+          "grantee": "rails_gd75ob"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_tnegri_hefdl9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_fdif4h"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_jdavis"
+        },
+        {
+          "permissions": "select",
+          "grantee": "analytics_process_incoming_events_oa32mf"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_a99j6d"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_d3a7h2"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_redemptions_c81425"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_data_copy_l799nl"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "delete, insert, select, update",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "merchant_segment_member_logs",
+      "columns": [
+        {
+          "name": "merchant_segment_id",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "delete, insert, references, select, trigger, truncate, update",
+          "grantee": "rails_gd75ob"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_tnegri_hefdl9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_fdif4h"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_jdavis"
+        },
+        {
+          "permissions": "select",
+          "grantee": "analytics_process_incoming_events_oa32mf"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_a99j6d"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_d3a7h2"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_redemptions_c81425"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_data_copy_l799nl"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "delete, insert, select, update",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "email_counts",
+      "columns": [
+        {
+          "name": "merchant_id",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "sent_at",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_id",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "delivered_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "opened_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "clicked_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "unsubscribed_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "suppress_unsubscribed_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "complained_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "suppress_complained_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "failed_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "bounced_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "email_collector_1cf3j6"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_other_carrier_8ecfg9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "pos_integrations_alerts_cijf3e"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_lag_check_bjjncc"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_brand_sales_imbodm"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_spend_buckets_i6deeb"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_mn21ig"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_category_sales_ni8ghd"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_member_opt_outs_5i1m3o"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_transaction_details_for_ads_7bkbd4"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_visit_details_brands_8db5bk"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_merchant_member_counts_bj3dm9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "messaging_reporting"
+        },
+        {
+          "permissions": "delete, insert, references, select, trigger, truncate, update",
+          "grantee": "rails_gd75ob"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_tnegri_hefdl9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_user_jl95l5"
+        },
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_push_data_9lmlb8"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_push_data_dfb2c9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_transaction_details_5nhkkg"
+        },
+        {
+          "permissions": "select",
+          "grantee": "autoconnects_cache_builder_7h8n39"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_fdif4h"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_jdavis"
+        },
+        {
+          "permissions": "select",
+          "grantee": "analytics_process_incoming_events_oa32mf"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_a99j6d"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_d3a7h2"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_redemptions_c81425"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_data_copy_l799nl"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "delete, insert, select, update",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "ten_dlc_brands_performance",
+      "columns": [
+        {
+          "name": "date",
+          "data_type": "date",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": "distkey",
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "name",
+          "data_type": "varchar(765)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "reference_id",
+          "data_type": "varchar(255)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "messages_per_day",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "provider",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "provider_name",
+          "data_type": "varchar(100)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "carrier_name",
+          "data_type": "varchar(100)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "sent",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "delivered",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "delivered_units",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "undelivered_units",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "unconfirmed_units",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "clicked",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "type",
+          "data_type": "varchar(100)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "email_collector_1cf3j6"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_other_carrier_8ecfg9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "pos_integrations_alerts_cijf3e"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_lag_check_bjjncc"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_brand_sales_imbodm"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_spend_buckets_i6deeb"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_mn21ig"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_category_sales_ni8ghd"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_member_opt_outs_5i1m3o"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_transaction_details_for_ads_7bkbd4"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_visit_details_brands_8db5bk"
+        },
+        {
+          "permissions": "select",
+          "grantee": "update_merchant_member_counts_bj3dm9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "messaging_reporting"
+        },
+        {
+          "permissions": "delete, insert, references, select, trigger, update",
+          "grantee": "rails_gd75ob"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_tnegri_hefdl9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_user_jl95l5"
+        },
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_push_data_9lmlb8"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_push_data_dfb2c9"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_transaction_details_5nhkkg"
+        },
+        {
+          "permissions": "select",
+          "grantee": "autoconnects_cache_builder_7h8n39"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_fdif4h"
+        },
+        {
+          "permissions": "select",
+          "grantee": "t_jdavis"
+        },
+        {
+          "permissions": "select",
+          "grantee": "analytics_process_incoming_events_oa32mf"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_a99j6d"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_d3a7h2"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_redemptions_c81425"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_data_copy_l799nl"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "delete, insert, select, update",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "aggregate_data_communication_actions",
+      "columns": [
+        {
+          "name": "merchant_id",
+          "data_type": "bigint                not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "campaign_id",
+          "data_type": "bigint                not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "campaign_sent_at",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "hour_start",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "hour_end",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "visit_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "spend_amount",
+          "data_type": "numeric(18)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "click_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "redemption_count",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "primary",
+          "data_type": "key (campaign_id",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": true
+        }
+      ],
+      "primary_key": "primary",
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "campaign_logs",
+      "columns": [
+        {
+          "name": "merchant_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "campaign_id",
+          "data_type": "bigint not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "member_id",
+          "data_type": "bigint",
+          "nullable": false,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "campaign_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "sms_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "push_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "email_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "first_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "email_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "push_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "sms_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "imessage_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "imessage_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "primary",
+          "data_type": "key (campaign_id",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": true
+        }
+      ],
+      "primary_key": "primary",
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "auto_campaign_log_sends",
+      "columns": [
+        {
+          "name": "merchant_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "auto_campaign_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "auto_campaign_message_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "member_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "auto_campaign_log_id",
+          "data_type": "bigint not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": "distkey",
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "primary",
+          "data_type": "key",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": true
+        },
+        {
+          "name": "auto_campaign_log_created_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "sms_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "push_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "email_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "first_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "email_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "push_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "sms_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "imessage_sent_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "imessage_credits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 encode az64",
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": "primary",
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "audience_members",
+      "columns": [
+        {
+          "name": "merchant_id",
+          "data_type": "integer   not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": "distkey",
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "audience_id",
+          "data_type": "integer   not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "member_id",
+          "data_type": "integer   not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "matched_at",
+          "data_type": "timestamp not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "removed_at",
+          "data_type": "timestamp",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "constraint",
+          "data_type": "audience_members_merchant_id_key",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "unique",
+          "data_type": "(merchant_id",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "reporting_y4mc58das_ho8o3n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "delete, insert, references, select, update",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "combined_communications",
+      "columns": [
+        {
+          "name": "communication_type",
+          "data_type": "smallint     not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "communication_id",
+          "data_type": "varchar(256)",
+          "nullable": false,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "communication_created_at",
+          "data_type": "timestamp    not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_type",
+          "data_type": "varchar(256)",
+          "nullable": false,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_id",
+          "data_type": "bigint       not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "merchant_id",
+          "data_type": "bigint",
+          "nullable": false,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "member_id",
+          "data_type": "bigint       not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "pre_stashboard_text",
+          "data_type": "varchar(65535)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "num_pre_stashboard_characters",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "stashboard_text",
+          "data_type": "varchar(65535)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "num_stashboard_characters",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "num_stashboard_emojis",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "ad_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "template_image_id",
+          "data_type": "bigint",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "num_images",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "num_videos",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "auto_campaign_type",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_offer",
+          "data_type": "boolean",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "false",
+          "is_primary_key": null
+        },
+        {
+          "name": "num_pre_stashboard_emojis",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "content_type",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "brand_metrics",
+      "columns": [
+        {
+          "name": "date_hour",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "merchant_id",
+          "data_type": "bigint                not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": "distkey",
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_id",
+          "data_type": "bigint                not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_type",
+          "data_type": "varchar(50)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "process_sent_at",
+          "data_type": "timestamp",
+          "nullable": false,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "slice_type",
+          "data_type": "varchar(50)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "slice_name",
+          "data_type": "varchar(255)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "spend",
+          "data_type": "numeric(18)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "visits",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": "0 not null encode az64",
+          "is_primary_key": null
+        },
+        {
+          "name": "created_at",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "updated_at",
+          "data_type": "timestamp             not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": null,
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "gdion_94lj0n"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "lambda_production_redshift"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    },
+    {
+      "name": "springbig_production_dms",
+      "columns": [
+        {
+          "name": "id",
+          "data_type": "bigint    not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "constraint",
+          "data_type": "springbig_production_dms_external_merchant_settings_linearized_pkey",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "primary",
+          "data_type": "key",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": true
+        },
+        {
+          "name": "external_merchant_setting_id",
+          "data_type": "bigint    not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "merchant_id",
+          "data_type": "bigint    not null",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "stashboard_credit_cap",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "credit_calculation_type",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "emoji_calculation_type",
+          "data_type": "integer",
+          "nullable": true,
+          "encoding": "az64",
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "mmp_subscription",
+          "data_type": "varchar(15)",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        },
+        {
+          "name": "push_to_sms_ratio",
+          "data_type": "numeric(10",
+          "nullable": true,
+          "encoding": null,
+          "key_type": null,
+          "default_value": null,
+          "is_primary_key": null
+        }
+      ],
+      "primary_key": "primary",
+      "constraints": [],
+      "permissions": [
+        {
+          "permissions": "select",
+          "grantee": "rails_gd75ob"
+        },
+        {
+          "permissions": "select",
+          "grantee": "inteq_fh84dj4s"
+        },
+        {
+          "permissions": "select",
+          "grantee": "ghuppert_m8e4d7"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_sms_data_fdif4h"
+        },
+        {
+          "permissions": "select",
+          "grantee": "analytics_process_incoming_events_oa32mf"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_a99j6d"
+        },
+        {
+          "permissions": "select",
+          "grantee": "glue_admin_d3a7h2"
+        },
+        {
+          "permissions": "select",
+          "grantee": "aggregate_campaign_redemptions_c81425"
+        },
+        {
+          "permissions": "select",
+          "grantee": "redshift_data_copy_l799nl"
+        },
+        {
+          "permissions": "select",
+          "grantee": "bbwoika"
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_hover_users_448172345061fed8\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"IAMR:AWSReservedSSO_RedshiftDatabaseReadUser_c0c02968d07490c9\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:ypark@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:mvizcaino@springbig.com\""
+        },
+        {
+          "permissions": "select",
+          "grantee": "\"awsidc:aonulak@springbig.com\""
+        },
+        {
+          "permissions": "insert, references, select, update",
+          "grantee": "group redshift_api_svc_dbgroup"
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "reporting_suggestions": [
+    {
+      "category": "Miembros y Usuarios",
+      "reports": [
+        "Demograf\u00eda de usuarios",
+        "Tasa de retenci\u00f3n de clientes",
+        "Segmentaci\u00f3n de clientes por valor",
+        "An\u00e1lisis de comportamiento de usuario",
+        "Crecimiento de base de usuarios por comerciante",
+        "Efectividad de programas de fidelizaci\u00f3n"
+      ],
+      "related_tables": [
+        "merchant_segment_members",
+        "merchant_segment_member_logs",
+        "audience_members"
+      ],
+      "possible_queries": [
+        "SELECT merchant_id, COUNT(*) FROM members GROUP BY merchant_id",
+        "SELECT created_at, COUNT(*) FROM members GROUP BY DATE_TRUNC('month', created_at)",
+        "SELECT member_id, COUNT(*) FROM transactions GROUP BY member_id ORDER BY COUNT(*) DESC LIMIT 100"
+      ]
+    },
+    {
+      "category": "Campa\u00f1as y Marketing",
+      "reports": [
+        "Efectividad de campa\u00f1as por tipo",
+        "ROI de campa\u00f1as de marketing",
+        "Tasa de conversi\u00f3n por campa\u00f1a",
+        "An\u00e1lisis de engagement con mensajes",
+        "Comparativa de campa\u00f1as autom\u00e1ticas vs manuales",
+        "Segmentaci\u00f3n y targeting de campa\u00f1as"
+      ],
+      "related_tables": [
+        "campaign_logs",
+        "auto_campaign_log_sends"
+      ],
+      "possible_queries": [
+        "SELECT campaign_id, COUNT(*) as sent_count FROM campaign_logs GROUP BY campaign_id",
+        "SELECT campaign_id, SUM(amount) as revenue FROM transactions WHERE campaign_id IS NOT NULL GROUP BY campaign_id",
+        "SELECT auto_campaign_id, COUNT(*) FROM auto_campaign_logs GROUP BY auto_campaign_id"
+      ]
+    },
+    {
+      "category": "Comerciantes",
+      "reports": [
+        "Comparativa de rendimiento entre comerciantes",
+        "An\u00e1lisis de crecimiento de base de clientes por comerciante",
+        "Efectividad de campa\u00f1as por comerciante",
+        "An\u00e1lisis de retenci\u00f3n de clientes por comerciante",
+        "Tendencias de ventas por ubicaci\u00f3n"
+      ],
+      "related_tables": [
+        "merchant_segment_members",
+        "merchant_segment_member_logs"
+      ],
+      "possible_queries": [
+        "SELECT merchant_id, COUNT(*) as member_count FROM members GROUP BY merchant_id",
+        "SELECT merchant_id, SUM(amount) as total_sales FROM transactions GROUP BY merchant_id",
+        "SELECT merchant_id, COUNT(*) as campaign_count FROM campaigns GROUP BY merchant_id"
+      ]
+    },
+    {
+      "category": "Comunicaciones y Mensajer\u00eda",
+      "reports": [
+        "An\u00e1lisis de efectividad de SMS vs email",
+        "Tasas de apertura y clics por tipo de mensaje",
+        "An\u00e1lisis de contenido de mensajes m\u00e1s efectivos",
+        "Optimizaci\u00f3n de horarios de env\u00edo",
+        "An\u00e1lisis de opt-outs y su impacto"
+      ],
+      "related_tables": [
+        "email_counts",
+        "aggregate_data_communication_actions",
+        "combined_communications"
+      ],
+      "possible_queries": [
+        "SELECT DATE_TRUNC('hour', sent_at) as hour, COUNT(*) FROM sms_logs GROUP BY hour ORDER BY COUNT(*) DESC",
+        "SELECT merchant_id, COUNT(*) as sms_count FROM sms_logs GROUP BY merchant_id",
+        "SELECT campaign_id, COUNT(*) as click_count FROM shortened_urls WHERE clicked = true GROUP BY campaign_id"
+      ]
+    }
+  ]
+}
